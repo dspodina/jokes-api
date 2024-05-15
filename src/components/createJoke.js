@@ -10,13 +10,11 @@ const createJoke = (jokeData) => {
   category.classList.add("category");
   category.innerText = jokeData.category;
 
-  // type
-  //   const type = document.createElement("p");
-  //   type.id = "type";
-  //   type.classList.add("type");
-  //   type.innerText = jokeData.type;
+  // underline
+  const underline = document.createElement("div");
+  underline.classList.add("underline");
 
-  container.append(category);
+  container.append(category, underline);
 
   //   check the type
   if (jokeData.type === "twopart") {
@@ -59,17 +57,17 @@ const createJoke = (jokeData) => {
   //   lang.innerText = jokeData.lang;
 
   // safe
-  const safe = document.createElement("p");
+  const safe = document.createElement("ul");
   safe.id = "safe";
   if (jokeData.safe === true) {
     safe.classList.add("safe");
-    safe.innerText = "Light-hearted humor";
+    safe.innerHTML = '<span id="green-dot">&#x2022;</span>Light-hearted humor';
   } else {
     safe.classList.add("unsafe");
-    safe.innerText = "Warning: explicit content";
+    safe.innerHTML = '<span id="red-dot">&#x2022;</span>Warning: explicit content';
   }
 
-  container.append(flags, safe);
+  container.append(safe, flags);
 
   return container;
 };

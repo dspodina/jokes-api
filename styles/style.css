@@ -1,3 +1,10 @@
+:root {
+  --white-color: #f5efe6;
+  --violet-color: #5f4bb6;
+  --red-color: #ff6d6d;
+  --green-color: #07c550;
+}
+
 *,
 *::before,
 *::after {
@@ -9,7 +16,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  background-color: #f5efe6;
+  background-color: var(--white-color);
   color: #001a29;
 }
 
@@ -23,12 +30,11 @@ main {
 
 h2 {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 36px;
-  font-weight: 700;
+  font-size: 40px;
+  font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: center;
-  margin: 30px 0;
 }
 
 #joke-container {
@@ -44,8 +50,8 @@ h2 {
   letter-spacing: 2px;
   font-weight: 400;
   text-transform: uppercase;
-  background-color: #5f4bb6;
-  color: #f5efe6;
+  background-color: var(--violet-color);
+  color: var(--white-color);
   border: none;
   padding: 10px 20px;
   border-radius: 10px;
@@ -75,7 +81,7 @@ li {
 }
 
 #flags li.true {
-  background: #ff6d6d;
+  background: var(--red-color);
   font-weight: 400;
 }
 
@@ -93,28 +99,49 @@ li {
 }
 
 .safe {
-  color: #07c550;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  margin-top: 30px;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 20px;
-  text-transform: lowercase;
-  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 .unsafe {
-  color: #ff6d6d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  margin-top: 30px;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 20px;
-  text-transform: lowercase;
-  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.underline {
+  width: 10rem;
+  height: 0.25rem;
+  background: var(--violet-color);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+#green-dot {
+  font-size: 72px;
+  color: var(--green-color);
+  margin-right: 5px;
+  padding-bottom: 10px;
+}
+
+#red-dot {
+  font-size: 72px;
+  color: var(--red-color);
+  margin-right: 5px;
+  padding-bottom: 10px;
 }
 
 @media screen and (max-width: 600px) {
   #joke-container {
-    width: 90%;
+    width: 95%;
     height: auto;
     max-height: 80vh;
     padding: 40px;
