@@ -1,7 +1,7 @@
-import loadHandler from '../handlers/loadHandler.js';
+import getJokeHandler from "../handlers/getJokeHandler.js";
 
 const loadEvent = () => {
-    window.addEventListener('load', loadHandler);
+  window.addEventListener("load", getJokeHandler);
 };
 
 export default loadEvent;

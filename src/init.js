@@ -3,4 +3,3 @@ import getJokeEvent from "./events/getJokeEvent.js";
 
 loadEvent();
 getJokeEvent();
-
