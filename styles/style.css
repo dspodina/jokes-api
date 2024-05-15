@@ -111,3 +111,23 @@ li {
   text-transform: lowercase;
   letter-spacing: 2px;
 }
+
+@media screen and (max-width: 600px) {
+  #joke-container {
+    width: 90%;
+    height: auto;
+    max-height: 80vh;
+    padding: 40px;
+    margin: 0 auto;
+  }
+
+  #flags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  li {
+    margin: 5px 10px;
+  }
+}
