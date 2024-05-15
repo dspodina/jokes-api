@@ -117,7 +117,7 @@ li {
 }
 
 .underline {
-  width: 10rem;
+  width: 7rem;
   height: 0.25rem;
   background: var(--violet-color);
   margin-left: auto;
