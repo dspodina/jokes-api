@@ -141,7 +141,7 @@ li {
 
 @media screen and (max-width: 600px) {
   #joke-container {
-    width: 95%;
+    width: 100%;
     height: auto;
     max-height: 80vh;
     padding: 40px;
